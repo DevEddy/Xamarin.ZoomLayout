@@ -4,6 +4,8 @@ using Android.OS;
 using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
+using Com.Otaliastudios.Zoom;
 
 namespace Sample
 {
@@ -21,6 +23,19 @@ namespace Sample
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
             fab.Click += FabOnClick;
+
+            var zoomLayout = FindViewById<ZoomLayout>(Resource.Id.zoomLayout1);
+            zoomLayout.EnableClickableChildren();
+
+            var textView = FindViewById<TextView>(Resource.Id.textView1);
+            textView.Click += TextView_Click;
+        }
+
+        private void TextView_Click(object sender, EventArgs e)
+        {
+            View view = (View)sender;
+            Snackbar.Make(view, "Tapped text view", Snackbar.LengthLong)
+                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

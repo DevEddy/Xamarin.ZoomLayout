@@ -8,9 +8,12 @@
     tools:showIn="@layout/activity_main">
 
     <com.otaliastudios.zoom.ZoomLayout
+        style="@style/ZoomStyleClickableChildren"
+        android:id="@+id/zoomLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-		<TextView 
+		<TextView
+            android:id="@+id/textView1"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_centerInParent="true"
