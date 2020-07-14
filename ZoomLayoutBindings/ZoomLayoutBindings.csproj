@@ -26,6 +26,8 @@
     <PackageTags>xamarin, android</PackageTags>
     <Title>Xamarin.ZoomLayout.Eddy</Title>
     <Description>Bindings for the excellent ZoomLayout by natario1</Description>
+    <PackageLicenseUrl>https://github.com/natario1/ZoomLayout</PackageLicenseUrl>
+    <PackageReleaseNotes>Updated the binding ZoomLayout library to 1.8.0</PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
